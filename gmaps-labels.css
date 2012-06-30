@@ -1,0 +1,12 @@
+.gmaps-label {
+	position: absolute;
+	border: 0;
+	white-space: nowrap;
+	font-family: Arial, sans-serif;
+	color: white;
+	text-shadow:
+		-1px -1px 0.5px rgba(0,0,0,0.5),
+		1px -1px 0.5px rgba(0,0,0,0.5),
+		-1px 1px 0.5px rgba(0,0,0,0.5),
+		1px 1px 0.5px rgba(0,0,0,0.5);
+}

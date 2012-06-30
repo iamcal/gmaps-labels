@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>gmaps-labels demo</title>
+	<link rel="stylesheet" type="text/css" media="all" href="gmaps-labels.css" />
+	<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3&sensor=false"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="gmaps-labels.js"></script>
+</head>
+<body>
+
+	<h1>gmaps-labels demo</h1>
+
+	<div id="map" style="width: 640px; height: 480px; border: 1px solid #000"></div>
+
+<script>
+
+var map = new google.maps.Map(document.getElementById("map"), {
+	center: new google.maps.LatLng(-34.397, 150.644),
+	zoom: 8,
+	mapTypeId: google.maps.MapTypeId.ROADMAP
+});
+
+var ll = new google.maps.LatLng(-34.083, 149.478);
+var box_sw = new google.maps.LatLng(-34.247, 148.95);
+var box_ne = new google.maps.LatLng(-33.901, 150.071);
+var box = new google.maps.LatLngBounds(box_sw, box_ne);
+
+google.maps.event.addListener(map, 'click', function(ev){
+	console.log(ev.latLng);
+});
+
+var overlay1 = new LabelOverlay({
+	ll		: ll,
+	//minBox	: box,
+
+	minBoxH		: 0.346,
+	minBoxW		: 1.121,
+
+	maxBoxH		: 0.09,
+	maxBoxW		: 0.3,
+
+	debugBoxes	: true,
+	debugVisibility	: true,
+
+	maxZoom		: 10,
+	minZoom		: 6,
+	label		: "Hello world",
+	map		: map
+});
+
+</script>
+
+</body>
+</html>
