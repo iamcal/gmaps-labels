@@ -28,8 +28,11 @@ LabelOverlay.prototype._buildBox = function(ll, w, h){
 }
 
 LabelOverlay.prototype.onAdd = function(){
+	var cls = 'gmaps-label';
+	if (this._args.className) cls += ' '+this._args.className;
+
 	var div = document.createElement('div');
-	div.className = 'gmaps-label';
+	div.className = cls;
 	div.innerHTML = this._args.label;
 
 	this._div = div;
