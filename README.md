@@ -2,7 +2,9 @@
 
 This code allows you to place textual labels on Google Maps, by implementing an overlay class.
 
-<img src="http://iamcal.github.com/gmaps-labels/demo.png" />
+<a href="http://iamcal.github.com/gmaps-labels/demo.htm"><img src="http://iamcal.github.com/gmaps-labels/demo.png" /></a>
+
+You can play with a very simple demo <a href="http://iamcal.github.com/gmaps-labels/demo.htm">here</a>.
 
 Using it is pretty simple. You'll need to load the JS and CSS files, along with jQuery:
 
