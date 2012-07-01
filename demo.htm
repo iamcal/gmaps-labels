@@ -19,7 +19,7 @@
 var map = new google.maps.Map(document.getElementById("map"), {
 	center: new google.maps.LatLng(-34.397, 150.644),
 	zoom: 8,
-	mapTypeId: google.maps.MapTypeId.ROADMAP
+	mapTypeId: google.maps.MapTypeId.SATELLITE
 });
 
 var ll = new google.maps.LatLng(-34.083, 149.478);
@@ -40,6 +40,8 @@ var overlay1 = new LabelOverlay({
 
 	maxBoxH		: 0.09,
 	maxBoxW		: 0.3,
+
+	//className	: 'small',
 
 	debugBoxes	: true,
 	debugVisibility	: true,
