@@ -2,7 +2,7 @@
 
 This code allows you to place textual labels on Google Maps, by implementing an overlay class.
 
---
+<img src="http://iamcal.github.com/gmaps-labels/demo.png" />
 
 Using it is pretty simple. You'll need to load the JS and CSS files, along with jQuery:
 
@@ -50,15 +50,15 @@ Those are the only required params, but there are a bunch of optional ones:
 The min/max boxes are best illustrated with an example. When the label size fits inside the blue 
 rectangle (the minBox), but is larger than the red rectangle (the maxBox), the label is shown.
 
---
+<img src="http://iamcal.github.com/gmaps-labels/box_ok.png" />
 
 When the label is smaller than the red rectangle (the maxBox), the label is hidden.
 
---
+<img src="http://iamcal.github.com/gmaps-labels/box_small.png" />
 
 And when the label is larger than the blue rectangle (the minBox), the label is also hidden.
 
---
+<img src="http://iamcal.github.com/gmaps-labels/box_large.png" />
 
 
 ## Styling
@@ -66,7 +66,7 @@ And when the label is larger than the blue rectangle (the minBox), the label is 
 Every label is given the class `gmaps-label`. The CSS file also defines the extra classes
 `small`, `big` and `huge`.
 
---
+<img src="http://iamcal.github.com/gmaps-labels/sizes.png" />
 
 You can replace the supplied CSS file with your own - just make sure the class has `position: absolute` set.
 
