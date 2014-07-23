@@ -33,7 +33,11 @@ LabelOverlay.prototype.onAdd = function(){
 
 	var div = document.createElement('div');
 	div.className = cls;
-	div.innerHTML = this._args.label;
+	if (this._args.labelElement) {
+		div.appendChild(this._args.labelElement);
+	} else {
+		div.innerHTML = this._args.label;
+	}
 
 	this._div = div;
 
